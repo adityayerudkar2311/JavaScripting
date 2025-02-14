@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var username = prompt('Enter your Username');
+         var password = prompt('Enter your Password');
+
+         if(username != "" && password != "")
+         {
+            if(username =="admin" && password =="admin123")
+            {
+                alert("Login Sucessfull !!");
+                window.location.href ="http://www.google.com";
+            }
+            else
+            {
+                alert("Login Failed !!");
+            }
+         }
+         else
+         {
+            alert('please fill all the fields !!')
+         }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
