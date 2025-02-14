@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkSheet</title>
+
+    <script>
+        var name = prompt('Enter Your Name');
+        var roll = prompt('Enter Your Roll Number');
+        var std = prompt('Enter Your class');
+        var math = prompt('Enter Your Maths marks');
+        var physics = prompt('Enter Your Physics marks');
+        var Chemistry = prompt('Enter Your Chemistry marks');
+        var English = prompt('Enter Your English marks');
+
+        var obtained_marks = parseInt(math) + parseInt(physics) + parseInt(Chemistry) + parseInt(English);
+        var percentage = obtained_marks * 100 / 400;
+        document.write("Your Name is:-" + name + "<br>");
+        document.write("Your Roll No:-" + roll + "<br>");
+        document.write("Your Class is:-" + std + "<br>");
+        document.write("Your Total Marks" + obtained_marks + "<br>");
+        document.write("Your Percentage" + percentage + "<br>");
+
+        if(percentage >= 80)
+        {
+            document.write("Your Grade is : A" );
+        }
+        else if(percentage >= 70)
+        {
+            document.write("Your Grade is : B" );
+        }
+        else if(percentage >= 60)
+        {
+            document.write("Your Grade is : B" );
+        }
+        else
+        {
+            document.write("Your Fail !!");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
