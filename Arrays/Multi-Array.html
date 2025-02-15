@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var persons = [
+        //     ["Adi",25,"Kolhapur"],
+        //     ["Khushi",22,"Dhule"],
+        //     ["Rushi",23,"Nashik"],
+        // ];
+
+        // document.write(persons[0]);
+
+        var people = new Array(3);
+        people[0] = new Array("Adi",25,"Pune");
+        people[1] = new Array("Khushi",22,"Pune");
+        people[2] = new Array("Rushi",23,"Pune");
+
+       // document.write(people[0][1]);
+
+       for(var i = 0;i<3;i++)
+       {
+        for(var j=0;j<3;j++)
+        {
+            document.write("<ul><li>" + people[i][j] + "</li></ul>");
+        }
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
