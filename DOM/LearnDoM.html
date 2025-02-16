@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction()
+        {
+            var p1 = document.getElementById("para");
+            p1.innerHTML = "You Are Awesome";
+            p1.style.color = "red";
+            p1.style.fontSize ="50px";
+        }
+        function resetFunction()
+        {
+            var p1 = document.getElementById("para");
+            p1.innerHTML = "Welcome To JavaScript";
+            p1.style.color = "Black";
+        }
+    </script>
+</head>
+<body>
+    <p id="para">Welcome To JavaScript</p>
+    <input type="button" value="Click" onclick="myFunction()">
+    <input type="button" value="Reset" onclick="resetFunction()">
+</body>
+</html>
