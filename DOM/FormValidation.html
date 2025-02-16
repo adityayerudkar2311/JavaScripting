@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test() {
+            var un = document.getElementById("un").value;
+            var pass = document.getElementById("pass").value;
+
+            if (un == "admin" && pass == "admin123") {
+                alert('You hava Sucessfully Login !!');
+                window.open("NextPageForForm.html","_blank");
+            }
+            else {
+                alert('Login Failed !!');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="">
+        <label>UserName:</label>
+        <input type="text" id="un">
+        <label>Password:</label>
+        <input type="password" id="pass">
+
+        <input type="button" value="Click me" onclick="test()">
+    </form>
+</body>
+
+</html>
