@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function add(a,b)
+        // {
+        //     return(a+b);
+        // }
+        // document.write(add(5,10,15,20));
+
+        //**************************************************
+        // add(5, 10, 15, 20);
+        // function add() {
+        //     let sum = 0;
+
+        //     for (let i in arguments) {
+        //         sum += arguments[i];
+        //     }
+        //     document.write(sum);
+        // }
+        //document.write(add());
+
+        add("Aditya", 10,20);
+
+        function add(value,...args)
+        {
+            let sum= 0;
+            for(let i in args)
+            {
+                sum += args[i];
+            }
+            document.write(sum);
+            document.write(value);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
